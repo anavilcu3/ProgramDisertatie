@@ -58,14 +58,16 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- LOGO ---
-LOGO_URL_LARGE = '../resources/logo_correct.png'
-LOGO_URL_SMALL = 'resources/logo_mini_correct.png'
+# 1. Obținem calea directorului în care se află acest script (Program/)
+base_path = os.path.dirname(__file__)
 
-st.logo(
-    LOGO_URL_LARGE,
-    icon_image=LOGO_URL_SMALL,
-)
+# 2. Construim căile corecte către resurse
+logo_large = os.path.join(base_path, "resources", "logo_correct.png")
+logo_small = os.path.join(base_path, "resources", "logo_mini_correct.png")
+main_image = os.path.join(base_path, "resources", "vecteezy_man-saves-money-from-business-investment-in-bank_4474434-1.jpg")
+
+# 3. Folosim căile în funcțiile Streamlit
+st.logo(logo_large, icon_image=logo_small)
 
 # --- SIDEBAR ---
 with st.sidebar:
@@ -87,7 +89,8 @@ with col1:
         st.switch_page("pages/1_verificare_credit.py")
 
 with col2:
-    st.image("../resources/vecteezy_man-saves-money-from-business-investment-in-bank_4474434-1.jpg", use_container_width=True)
+   # La linia 90, înlocuiește vechiul st.image cu:
+st.image(main_image, use_container_width=True)
 
 st.write("---")
 
