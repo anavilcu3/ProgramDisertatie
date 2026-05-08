@@ -58,9 +58,9 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Testează cu aceste URL-uri ca să vezi dacă pornește aplicația
-LOGO_URL_LARGE = 'https://www.streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png'
-LOGO_URL_SMALL = 'https://www.streamlit.io/images/brand/streamlit-mark-color.png'
+# --- LOGO ---
+LOGO_URL_LARGE = '../resources/logo_correct.png'
+LOGO_URL_SMALL = 'resources/logo_mini_correct.png'
 
 st.logo(
     LOGO_URL_LARGE,
@@ -87,7 +87,7 @@ with col1:
         st.switch_page("pages/1_verificare_credit.py")
 
 with col2:
-    st.image("resources/vecteezy_man-saves-money-from-business-investment-in-bank_4474434-1.jpg", use_container_width=True)
+    st.image("../resources/vecteezy_man-saves-money-from-business-investment-in-bank_4474434-1.jpg", use_container_width=True)
 
 st.write("---")
 
