@@ -41,7 +41,7 @@ usd_rate = get_live_usd_rate()
 @st.cache_resource
 def load_assets():
     try:
-        with open('../model_final.pkl', 'rb') as f:
+        with open('Program/model_final.pkl', 'rb') as f:
             return pickle.load(f)
     except FileNotFoundError:
         st.error("Eroare: Fișierul 'model_final.pkl' nu a fost găsit.")
