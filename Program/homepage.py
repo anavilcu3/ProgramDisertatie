@@ -87,7 +87,7 @@ with col1:
     """, unsafe_allow_html=True)
     
     if st.button("❔ Verifică Eligibilitatea"):
-        st.switch_page("../pages/1_verificare_credit.py")
+        st.switch_page("pages/1_verificare_credit.py")
 
 with col2:
    # La linia 90, înlocuiește vechiul st.image cu:
