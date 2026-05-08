@@ -58,9 +58,9 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- LOGO ---
-LOGO_URL_LARGE = 'resources/logo_correct.png'
-LOGO_URL_SMALL = 'resources/logo_mini_correct.png'
+# Testează cu aceste URL-uri ca să vezi dacă pornește aplicația
+LOGO_URL_LARGE = 'https://www.streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png'
+LOGO_URL_SMALL = 'https://www.streamlit.io/images/brand/streamlit-mark-color.png'
 
 st.logo(
     LOGO_URL_LARGE,
