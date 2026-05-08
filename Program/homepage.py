@@ -90,7 +90,7 @@ with col1:
 
 with col2:
    # La linia 90, înlocuiește vechiul st.image cu:
-st.image(main_image, use_container_width=True)
+    st.image(main_image, use_container_width=True)
 
 st.write("---")
 
